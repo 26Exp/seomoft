@@ -1,0 +1,13 @@
+#ignore wp uploads
+wp-content/uploads
+.DS_Store
+*.sql
+cache
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/db.php
+wp-content/debug.log
+wp-content/upgrade
+wp-content/backups
+wp-content/cache

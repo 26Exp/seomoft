@@ -1,0 +1,581 @@
+/*!
+Theme Name: Ohio-Child
+Theme URI: http://ohio.colabr.io/
+Author: Colabrio
+Author URI: http://colabr.io/
+Description: Ohio is a WordPress theme bundled with premium plugins to build a modern and functional website.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: ohio
+Text Domain: ohio-child
+Tags: ajax, customizer, ecommerce, portfolio, minimal, page builder, responsive, multipurpose, shop, store, woocommerce, wpml
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+.button-no-hover-bg a.btn:hover {
+    background: transparent;
+	}
+
+.services-block .flipbox-button,
+.seo-services-block .flipbox-button{
+    text-align: center!important;
+    width: 80%!important;
+}
+.seo-services-block .eael-elements-flip-box-icon-image {
+    margin-top: 30px;
+}
+.site-footer .theme-logo.width-50 {
+    width: 50%!important;
+}
+.btn-outline, input[type="submit"].btn-outline, a.btn-outline, .is-style-outline .wp-block-button__link {
+    border-radius: 10px;
+}
+.site-header:not(.mobile-header) .sub-nav .sub-menu .sub-nav-item a, 
+.site-header:not(.mobile-header) .sub-nav .sub-sub-menu .sub-nav-item a {
+    font-size: 16px!important;
+}
+body.home section.elementor-section.elementor-top-section.elementor-element.elementor-element-504191d.elementor-section-stretched.elementor-section-content-middle.elementor-section-height-full.elementor-section-boxed {
+    width: 100vw !important;
+}
+
+/* Footer */
+.site-footer .widgets {
+    padding: 70px 0 40px 0;
+}
+.site-footer li#text-2 {
+    padding-top: 20px;
+}
+.site-footer li#ohio_widget_socialbar_subscribe-2 {
+    padding-top: 10px;
+}
+.site-footer li#ohio_widget_socialbar_subscribe-2 h3 {
+    margin-bottom: 10px!important;
+}
+footer .socialbar.small.outline a:last-child {
+    margin-left: -15px;
+}
+.site-footer .widgets .subscribe-form input[type="email"] {
+    background-color: #fff;
+    border-radius: 25px;
+}
+.site-footer .widget_nav_menu .menu-link span {
+    color: #fff;
+}
+.site-footer .btn-flat{
+line-height: 22px;
+}
+.site-footer .widgets .subscribe-form input[type="email"] {
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+}
+
+/* Customize services blocks */
+.services-block h3.eael-elements-flip-box-heading {
+	letter-spacing: 0.5px;
+}
+.services-block .eael-elements-flip-box-front-container h3.eael-elements-flip-box-heading {
+    height: 50px;
+}
+
+.site-header:not(.mobile-header) div.sub-sub-nav.menu-left {
+    left: 210px!important;
+}
+
+.gradient-bullets i.fas.fa-circle,
+.gradient-bullets-check i.ion.ion-md-checkmark-circle,
+.gradient-bullets-check i.ion.ion-ios-checkmark-circle{
+    background: -moz-linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    background: -webkit-linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    background: linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+	padding-left:2px;
+}
+/* icon background fix for safari */
+
+   .gradient-bullets-check .ion-ios-checkmark-circle:before,
+	.gradient-bullets-check .ion-md-checkmark-circle:before{
+display: initial!important;
+}
+
+.button-custom-width {
+    width: 50%!important;
+    margin: 0 auto;
+}
+.services-block .eael-elements-flip-box-icon-image{
+position: fixed;
+    top: -20%;
+    left: 60%;
+	}
+.services-block .eael-elements-flip-box-padding {
+    padding: 10%;
+}
+.services-block.web-dev .eael-elements-flip-box-icon-image{
+position: fixed;
+    top: -22.5%;
+	}
+.services-block.content-marketing .eael-elements-flip-box-icon-image {
+    left: 10%;
+    top: -16.5%;
+}
+.menu-optional .btn-optional {
+    background-image: linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    color: #ffffff;
+    border: none;
+    font-weight: 300;
+	font-size:18px;
+    line-height:28px;
+}
+a.btn.btn,
+.contact-form-homepage button.btn.btn-outline.btn-large,
+.site-footer .btn-flat,
+.custom-pricing-table a.eael-pricing-button{
+    background-image: linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%)!important;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  a.btn.btn,
+.contact-form-homepage button.btn.btn-outline.btn-large,
+.site-footer .btn-flat,
+.custom-pricing-table a.eael-pricing-button{
+    border-radius: 50px;
+}
+}
+a.btn.btn:hover,
+.contact-form-homepage button.btn.btn-outline.btn-large:hover,
+.site-footer .btn-flat:hover,
+.custom-pricing-table a.eael-pricing-button:hover{
+    background-image: linear-gradient(90deg, #8a35ca 0%, #6032d9 100%)!important;
+}
+.contact-form-homepage button.btn.btn-outline.btn-large {
+    border:none;
+}
+.btn-large, a.btn-large {
+    padding: 15px 50px!important;
+	}
+.contact-form-homepage form.wpcf7-form {
+    color: #fff;
+}
+@media screen and (min-width: 1600px){
+h2 {
+    font-size: 50px;
+}
+}
+ h4.elementor-image-box-title {
+    margin-top: 10px!important;
+}
+
+/* Pricing Table */
+.custom-pricing-table .eael-pricing-item .header {
+    background: #e3e4e4;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+	padding-bottom: 0px!important;
+}
+.custom-pricing-table .eael-pricing-item .body ul li:nth-child(2){
+    background: #e3e4e4;
+    border-radius: 25px;
+	font-size: 20px!important;
+    font-weight: bold;
+    color: #bc38c8!important;
+}
+.custom-pricing-table .eael-pricing-item .header .title,
+.custom-pricing-table span.original-price{
+    background: linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.custom-pricing-table .eael-pricing-item .body{
+   
+    padding: 10px 15px!important;
+}
+.custom-pricing-table .eael-pricing-item .body ul li:first-child {
+    font-weight: bold;
+	border: none;
+}
+.custom-pricing-table .eael-pricing-item .eael-pricing-tag {
+    margin-bottom: 0px!important;
+}
+.custom-pricing-table .footer {
+    padding-bottom: 15px;
+}
+/* Pricing table 2 */
+.custom-pricing-table.pricing2 .eael-pricing-item {
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+.pricing2 .eael-pricing-item .header .title {
+    text-align: center;
+}
+.pricing2 .eael-pricing-item .eael-pricing-tag {
+    display: none;
+}
+.custom-pricing-table.pricing2 .eael-pricing-item .body ul li:first-child {
+    font-weight: 300;
+}
+.custom-pricing-table.pricing2 .eael-pricing-item .body {
+    padding: 10px 25px!important;
+}
+.custom-pricing-table.pricing2 .eael-pricing-item .body ul li:nth-child(2) {
+    background: none;
+    font-size: 16px!important;
+    font-weight: 300;
+    color: #000!important;
+}
+
+.btn-round-light .ion, .btn-round-light i {
+    background-color: rgba(136, 136, 136, 0.4);
+    color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .mobile-text-align-center .elementor-text-editor,
+	.mobile-text-align-center .title,
+	.mobile-text-align-center .subtitle{
+    text-align: center;
+}
+	.mobile-text-align-center .ohio-button-sc {
+    text-align: center;
+}
+}
+/*
+html {
+  scroll-behavior: smooth
+}*/
+
+#benefits {
+  background-color: #E3E4E4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  padding: 50px 0 0;
+  max-width: 1500px;
+  margin: 0 auto
+}
+
+@media screen and (max-width: 1280px) {
+  #benefits {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr
+  }
+}
+
+.masonry-grid {
+  height: inherit
+}
+
+@media screen and (max-width: 1280px) {
+  .masonry-grid {
+    margin: 0 auto
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .masonry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+
+  .masonry-grid .masonry-item {
+    width: 250px;
+    margin: 10px
+  }
+
+  .masonry-grid .masonry-item .title {
+    font-size: 20px
+  }
+
+  .masonry-grid .masonry-item .img img {
+    width: 70px
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .masonry-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+
+  .masonry-grid .masonry-item {
+    width: calc(100% - 10px - 10px);
+    margin: 10px auto
+  }
+}
+
+.masonry-item {
+  padding: 30px 20px;
+  width: 280px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-bottom: 20px
+}
+
+.masonry-item .title {
+  font-size: 26px;
+  font-weight: 200
+}
+
+.masonry-item .img {
+  text-align: center;
+  margin-bottom: 30px
+}
+
+.masonry-item .img img {
+  width: 90px
+}
+
+.benefit-text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 15px
+}
+
+@media screen and (max-width: 1280px) {
+  .benefit-text_container {
+    padding-top: 40px
+  }
+}
+
+.benefit-text_item {
+  max-height: 0;
+  -webkit-transition: max-height .25s ease-in-out;
+  -o-transition: max-height .25s ease-in-out;
+  transition: max-height .25s ease-in-out;
+  overflow: hidden
+}
+
+.benefit-text_item .title {
+  font-size: 30px;
+  font-weight: 200
+}
+
+.benefit-text_item .descrp {
+  font-size: 18px
+}
+
+.benefit-text_item .list li {
+  font-weight: 600;
+  font-size: 18px
+}
+#benefits .masonry-item:hover {
+    box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.3);
+}
+#benefits .masonry-item {
+    transition: box-shadow .2s;
+}
+.mobile-benefits-section h3.eael-accordion-tab-title {
+    text-align: center;
+}
+.mobile-benefits-section img {
+    width: 30%!important;
+    height: auto!important;
+}
+.mobile-benefits-section .eael-accordion-content{
+    text-align: center;
+}
+.mobile-benefits-section .elementor-tab-title.active {
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+}
+.mobile-benefits-section .eael-accordion-content {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.mobile-benefits-section .eael-accordion-list .eael-accordion-header.active {
+    box-shadow: 0 22px 44px 0 rgba(0, 0, 0, 0.3)!important;
+}/*
+.home ul .current-menu-item > a {
+    color: #fff!important;
+}*/
+html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden]{
+    padding-right:0px!important;
+}
+div#popmake-23377,
+div#popmake-23434,
+div#popmake-24230{
+    background: #232229;
+	padding: 40px 60px 60px 60px;
+	border-radius: 20px;
+}
+div#popmake-23377 h3,
+div#popmake-23434 h3,
+div#popmake-24230 h3{
+    color: #fff;
+    font-weight: 200;
+	border-bottom: 1px solid rgba(136, 136, 136, 0.8);
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  div#popmake-23377 h3,
+div#popmake-23434 h3,
+div#popmake-24230 h3{
+    font-size:26px;
+}
+}
+div#popmake-23377 button.pum-close.popmake-close,
+div#popmake-23434 button.pum-close.popmake-close,
+div#popmake-24230 button.pum-close.popmake-close{
+    background-color: transparent!important;
+	right: 10px!important;
+    top: 10px!important;
+}
+div#popmake-23377 input.wpcf7-form-control,
+div#popmake-23434 input.wpcf7-form-control,
+div#popmake-24230 input.wpcf7-form-control{
+    background-color: #FFFFFF;
+    color: #000000;
+	margin-top:10px;
+	border: 1px solid rgba(136, 136, 136, 0.8);
+}
+div#popmake-23377 .wpcf7-form labe,
+div#popmake-23434 .wpcf7-form label,
+div#popmake-24230 .wpcf7-form label{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    display: block;
+    font-style: normal;
+    text-align: left;
+}
+div#popmake-23377 input.wpcf7-form-control.wpcf7-submit,
+div#popmake-23434 input.wpcf7-form-control.wpcf7-submit,
+div#popmake-24230 input.wpcf7-form-control.wpcf7-submit{
+    background-image: linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%)!important;
+    border-radius: 25px;
+    border: none;
+	color: #fff;
+	margin-top: 10px;
+}
+div#popmake-23377 input.wpcf7-form-control.wpcf7-submit:hover,
+div#popmake-23434 input.wpcf7-form-control.wpcf7-submit:hover,
+div#popmake-24230 input.wpcf7-form-control.wpcf7-submit:hover{
+    background-image: linear-gradient(90deg, #8a35ca 0%, #6032d9 100%)!important;
+}
+.pum-theme-23373,
+.pum-theme-23434,
+.pum-theme-24230{
+    background-color: rgba( 0, 0, 0, 0.75 )!important;
+}
+div#popmake-23377 div[class^='vc_col-'],
+div#popmake-23434 div[class^='vc_col-'],
+div#popmake-24230 div[class^='vc_col-'] {
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+.custom-minus i.fas.fa-minus {
+    background: -moz-linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    background: -webkit-linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    background: linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient h3 {
+    background: linear-gradient(90deg, #8A35CA 0%, #CE39C8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+li.company-link ul.sub-menu.sub-nav-group {
+    min-width: 160px!important;
+    max-width: 200px!important;
+}
+.clb-hamburger-nav .menu .nav-item a:before {
+    line-height: 20px!important;
+    font-size: .20em!important;
+    font-weight: 600!important;
+
+}
+
+.label-black label {
+    color: #000;
+}
+.eael-pricing.style-1 .eael-pricing-item .eael-pricing-tag:after {
+	display:none;
+}
+.eael-pricing.style-1 .eael-pricing-item .body ul li {
+    border: none;
+}
+
+.single-ohio_portfolio .clb-page-headline-holder {
+    padding-bottom: 0px;
+}
+
+.single-ohio_portfolio h6.project-meta-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+.single-ohio_portfolio .project-page .project-meta li {
+    min-width: -webkit-calc(30% - 20px);
+    min-width: calc(30% - 20px);
+    width: -webkit-calc(30% - 20px);
+    width: calc(30% - 20px);
+    margin-right: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(23, 22, 26, 0.35);
+    margin-bottom: 20px;
+}
+.single-ohio_portfolio .page-container.top-offset {
+    padding-top: 70px;
+}
+.single-ohio_portfolio .project-page-content {
+    padding-top: 40px;
+}
+.single-ohio_portfolio .category-holder:not(.no-divider):after{
+	display:none;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    color: #46b450!important;
+	border:none!important;
+}
+footer .socialbar.small.outline a {
+    margin-right: 25px;
+}
