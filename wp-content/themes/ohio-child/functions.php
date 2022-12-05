@@ -21,7 +21,8 @@ function AS_disable_plugin_updates( $value ) {
 	//create an array of plugins you want to exclude from updates ( string composed by folder/main_file.php)
 	$pluginsNotUpdatable = [
 		'advanced-custom-fields-pro/acf.php',
-		'wp-mail-smtp-pro/wp_mail_smtp.php'
+		'wp-mail-smtp-pro/wp_mail_smtp.php',
+        'elementor/elementor.php',
 	];
 
 	if ( isset($value) && is_object($value) ) {
