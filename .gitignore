@@ -1,5 +1,5 @@
-#ignore wp uploads
 wp-content/uploads
+.idea
 .DS_Store
 *.sql
 cache
