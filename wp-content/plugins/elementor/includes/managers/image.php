@@ -84,7 +84,7 @@ class Images_Manager {
 
 				$urls[ $size ] = Group_Control_Image_Size::get_attachment_image_src( $id, 'image', $instance );
 			} else {
-				$urls[ $size ] = wp_get_attachment_image_src( $id, $size )[0];
+				$urls[ $size ] = wp_get_attachment_image_src( $id, $size )[0] ?? '';
 			}
 		}
 
