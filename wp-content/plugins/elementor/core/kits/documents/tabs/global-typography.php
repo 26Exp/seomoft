@@ -37,7 +37,7 @@ class Global_Typography extends Tab_Base {
 	}
 
 	public function get_help_url() {
-		return 'https://go.elementor.com/global-fonts/';
+		return 'https://go.elementor.com/global-fonts';
 	}
 
 	protected function register_tab_controls() {
@@ -109,11 +109,6 @@ class Global_Typography extends Tab_Base {
 							'{{SELECTOR}}' => '--e-global-typography-{{external._id.VALUE}}-letter-spacing: {{SIZE}}{{UNIT}}',
 						],
 					],
-					'word_spacing' => [
-						'selectors' => [
-							'{{SELECTOR}}' => '--e-global-typography-{{external._id.VALUE}}-word-spacing: {{SIZE}}{{UNIT}}',
-						],
-					],
 				],
 			]
 		);
@@ -154,14 +149,6 @@ class Global_Typography extends Tab_Base {
 		];
 
 		$this->add_control(
-			'heading_system_typography',
-			[
-				'type' => Controls_Manager::HEADING,
-				'label' => esc_html__( 'System Fonts', 'elementor' ),
-			]
-		);
-
-		$this->add_control(
 			'system_typography',
 			[
 				'type' => Global_Style_Repeater::CONTROL_TYPE,
@@ -171,15 +158,6 @@ class Global_Typography extends Tab_Base {
 					'add' => false,
 					'remove' => false,
 				],
-				'separator' => 'after',
-			]
-		);
-
-		$this->add_control(
-			'heading_custom_typography',
-			[
-				'type' => Controls_Manager::HEADING,
-				'label' => esc_html__( 'Custom Fonts', 'elementor' ),
 			]
 		);
 

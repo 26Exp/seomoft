@@ -707,9 +707,6 @@ class Element_Section extends Element_Base {
 					'saturation' => esc_html__( 'Saturation', 'elementor' ),
 					'color' => esc_html__( 'Color', 'elementor' ),
 					'luminosity' => esc_html__( 'Luminosity', 'elementor' ),
-					'difference' => esc_html__( 'Difference', 'elementor' ),
-					'exclusion' => esc_html__( 'Exclusion', 'elementor' ),
-					'hue' => esc_html__( 'Hue', 'elementor' ),
 				],
 				'selectors' => [
 					'{{WRAPPER}} > .elementor-background-overlay' => 'mix-blend-mode: {{VALUE}}',
@@ -835,7 +832,7 @@ class Element_Section extends Element_Base {
 			[
 				'label' => esc_html__( 'Border Radius', 'elementor' ),
 				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%', 'em' ],
+				'size_units' => [ 'px', '%' ],
 				'selectors' => [
 					'{{WRAPPER}}, {{WRAPPER}} > .elementor-background-overlay' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
@@ -1140,7 +1137,7 @@ class Element_Section extends Element_Base {
 			]
 		);
 
-		$this->add_responsive_control(
+		$this->add_control(
 			'text_align',
 			[
 				'label' => esc_html__( 'Text Align', 'elementor' ),
@@ -1566,14 +1563,14 @@ class Element_Section extends Element_Base {
 		if ( ! is_file( $shape_path ) || ! is_readable( $shape_path ) ) {
 			return;
 		}
-
 		?>
 		<div class="elementor-shape elementor-shape-<?php echo esc_attr( $side ); ?>" data-negative="<?php
-			Utils::print_unescaped_internal_string( $negative ? 'true' : 'false' );
+			// PHPCS - the variable $negative is getting a setting value with a strict structure.
+			echo var_export( $negative ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		?>">
 			<?php
 				// PHPCS - The file content is being read from a strict file path structure.
-				echo Utils::file_get_contents( $shape_path ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo file_get_contents( $shape_path ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			?>
 		</div>
 		<?php

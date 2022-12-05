@@ -1,7 +1,6 @@
 <?php
 namespace Elementor\Core\Common\Modules\Connect\Apps;
 
-use Elementor\Api;
 use Elementor\User;
 use Elementor\Plugin;
 use Elementor\Core\Common\Modules\Connect\Module as ConnectModule;
@@ -68,7 +67,7 @@ class Library extends Common_App {
 		return array_replace_recursive( $settings, [
 			'library_connect' => [
 				'is_connected' => $is_connected,
-				'subscription_plans' => $connect->get_subscription_plans( 'template-library' ),
+				'subscription_plans' => $connect->get_subscription_plans( 'panel-library' ),
 				'base_access_level' => ConnectModule::ACCESS_LEVEL_CORE,
 				'current_access_level' => ConnectModule::ACCESS_LEVEL_CORE,
 			],
@@ -86,17 +85,6 @@ class Library extends Common_App {
 	 */
 	public function register_ajax_actions( $ajax_manager ) {
 		$ajax_manager->register_ajax_action( 'library_connect_popup_seen', [ $this, 'library_connect_popup_seen' ] );
-	}
-
-	/**
-	 * After Connect
-	 *
-	 * After Connecting to the library, re-fetch the library data to get it up to date.
-	 *
-	 * @since 3.7.0
-	 */
-	protected function after_connect() {
-		Api::get_library_data( true );
 	}
 
 	protected function get_app_info() {
@@ -124,7 +112,6 @@ class Library extends Common_App {
 
 	protected function init() {
 		add_filter( 'elementor/editor/localize_settings', [ $this, 'localize_settings' ] );
-		add_filter( 'elementor/common/localize_settings', [ $this, 'localize_settings' ] );
 		add_action( 'elementor/ajax/register_actions', [ $this, 'register_ajax_actions' ] );
 	}
 }
